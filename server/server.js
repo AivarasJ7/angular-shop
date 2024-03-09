@@ -19,7 +19,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // GET route - Allows to get all the items
-// example: localhost:3000/clothes?page=0&perPage=2 - GET
+// example: localhost:3000/clothes?page=0&perPage=2
 app.get("/clothes", (req, res) => {
   const page = parseInt(req.query.page) || 0;
   const perPage = parseInt(req.query.perPage) || 10;
